@@ -1,0 +1,73 @@
+.contact{
+    width: 80%;
+    margin: 0 auto;
+    &__info{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon{
+        font-size: 3.5rem;
+        font-weight: 300;
+        color: $color-black-2;
+        padding: 1.5rem;
+        position: relative;
+
+        &::after{
+            content: "";
+            height: 50%;
+            width: 1px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background-color:$color-grey-dark-4;
+        }
+    }
+
+    &__details{
+        padding: 1.5rem;
+    }
+
+    &__title{
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: $color-black-2;
+        letter-spacing: 1px;
+    }
+
+    &__value{
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    &__form{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__form-group{
+        flex: 1 0 50%;
+        padding: 1rem;
+    }
+
+    &__form-input{
+        width: 100%;
+        padding: 1.5rem 2rem;
+        font-family: inherit;
+        font-weight: inherit;
+        border: none;
+        border-radius: 2px;
+        font-size: 1.6rem;
+
+    }
+
+
+}

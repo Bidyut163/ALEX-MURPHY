@@ -1,0 +1,78 @@
+/* color primary #00A8A8 */
+/* color primary light #04c2c2*/
+/* color primary dark ##038787 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    box-sizing: border-box;
+
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+
+}
+
+.header{
+    height: 90vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(2, 184, 184, 0.801),
+        rgba(2, 158, 158, 0.801)),
+        url(../img/header-img.jpg);
+    background-size: cover;
+
+    color: #fff;
+    padding: 4rem;
+    position: relative;
+}
+
+.header__text-box{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.heading-primary{
+    
+    
+}
+
+.heading-primary--main{  
+    font-family: 'Raleway', sans-serif;
+    display: block;
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.heading-primary--sub{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    color: #aaa;
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-list{
+    list-style-type: none;
+    font-size: 1.6rem;
+    display: flex;
+}
+
+.navbar-item{
+    padding: 0 1rem;
+}

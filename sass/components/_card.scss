@@ -1,0 +1,68 @@
+.card{
+    height: 52rem;
+    background-color: $color-white;
+    box-shadow: 0 1rem 4rem rgba($color-black, 0.15);
+    border-radius: 3px;
+    overflow: hidden;
+    
+
+    &__picture{
+        height: 27rem;
+        width: 100%;
+        background-size: 100%;
+        background-position: center;
+        transition: all 1s;
+       
+        
+        &--1{
+            background-image: linear-gradient(
+            to right, 
+            rgba($color-black, 0.5), 
+            rgba($color-black, 0.5)), 
+            url(../img/blog-img-1.jpg);
+        }
+
+        &--2{
+            background-image: linear-gradient(
+            to right, 
+            rgba($color-black, 0.5), 
+            rgba($color-black, 0.5)), 
+            url(../img/blog-img-2.jpg);
+        }
+
+        &--3{
+            background-image: linear-gradient(
+            to right, 
+            rgba($color-black, 0.5), 
+            rgba($color-black, 0.5)), 
+            url(../img/blog-img-3.jpg);
+        }
+    }
+
+    &:hover &__picture{
+        background-size: 110%;
+    }
+
+    &__details{
+        padding: 3rem 2.5rem;
+        
+    }
+
+    &__date{
+        font-size: 1.6rem;
+        margin-bottom: .5rem;
+    }
+
+    &__heading{
+        font-size: 2rem;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        color: #2C2C2C;
+        margin-bottom: 1rem;
+    }
+
+    &__text{
+        font-size: 1.6rem;
+    }
+
+}
